@@ -1,0 +1,11 @@
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+var feedbackSchema = new Schema({
+   customerName:String,
+   providerName:String,
+   satisfied:String,
+   comments:String,
+   rating:String
+});
+module.exports = mongoose.model('feedback',feedbackSchema);          

@@ -1,0 +1,15 @@
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+var consumerSchema = new Schema({
+   fname:String,
+   lname:String,
+   userName:String,
+   password:String,
+   location:String,
+   email:String,
+   city:String,
+   interestCategory:String,
+   interestSubCategory:String
+});
+module.exports = mongoose.model('consumer',consumerSchema);          

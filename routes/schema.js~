@@ -1,0 +1,17 @@
+var mongoose = require('mongoose');
+
+
+console.log("auto is"+auto);
+console.log("mongose is"+mongoose);
+var Schema = mongoose.Schema;
+var customerSchema = new Schema({
+   fname:String,
+   lname:String,
+   address:String,
+   mobileno:String,
+   area:String,
+   city:String,
+   date:Date,
+   bookingSlot:String
+});
+module.exports = mongoose.model('customer',customerSchema);          

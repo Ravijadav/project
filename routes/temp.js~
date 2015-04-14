@@ -1,0 +1,12 @@
+var cheerio = require('cheerio'),
+    $ = cheerio.load('<!DOCTYPE html> <html> <body> <form> First name: <p id="fname"> <br> Last name: <p id="lname"> </form> </body> </html>');
+
+var obj={fname:"sonil",lname:"shrivastava"};
+console.log(obj.fname);
+$('#fname').text(obj.fname);
+$('#lname').text('Shrivastava');
+
+console.log($.html())
+
+
+

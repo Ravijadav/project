@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '3.1.2' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ '3.1.2', null ]
+7 verbose cache add name=undefined spec="3.1.2" args=["3.1.2",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '3.1.2',
+8 verbose parsed url   path: '3.1.2',
+8 verbose parsed url   href: '3.1.2' }
+9 silly lockFile 7c49f611-3-1-2 3.1.2
+10 verbose lock 3.1.2 /home/sonil/.npm/7c49f611-3-1-2.lock
+11 silly lockFile 7c49f611-3-1-2 3.1.2
+12 silly lockFile 7c49f611-3-1-2 3.1.2
+13 verbose addNamed [ '3.1.2', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile d102c36d-3-1-2 3.1.2@
+16 verbose lock 3.1.2@ /home/sonil/.npm/d102c36d-3-1-2.lock
+17 silly addNameRange { name: '3.1.2', range: '*', hasData: false }
+18 verbose request where is /3.1.2
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 93cb37b8f0d4dd19
+21 verbose url raw /3.1.2
+22 verbose url resolving [ 'https://registry.npmjs.org/', './3.1.2' ]
+23 verbose url resolved https://registry.npmjs.org/3.1.2
+24 verbose request where is https://registry.npmjs.org/3.1.2
+25 info trying registry request attempt 1 at 22:36:44
+26 http GET https://registry.npmjs.org/3.1.2
+27 http 404 https://registry.npmjs.org/3.1.2
+28 verbose headers { date: 'Thu, 09 Apr 2015 17:06:46 GMT',
+28 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '51',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   'x-served-by': 'cache-fra1229-FRA',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1428599206.030995,VS0,VE712',
+28 verbose headers   'keep-alive': 'timeout=10, max=50',
+28 verbose headers   connection: 'Keep-Alive' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Thu, 09 Apr 2015 17:06:46 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '51',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-fra1229-FRA',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1428599206.030995,VS0,VE712',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly lockFile d102c36d-3-1-2 3.1.2@
+31 silly lockFile d102c36d-3-1-2 3.1.2@
+32 error 404 404 Not Found: 3.1.2
+32 error 404
+32 error 404 '3.1.2' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'exp2014'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Linux 3.5.0-54-generic
+34 error command "/usr/bin/node" "/usr/bin/npm" "install" "3.1.2"
+35 error cwd /home/sonil/exp2014/routes
+36 error node -v v0.10.38
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]
